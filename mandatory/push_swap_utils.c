@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap_utils_bonus.c                            :+:      :+:    :+:   */
+/*   push_swap_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mel-ward <mel-ward@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:47:57 by mel-ward          #+#    #+#             */
-/*   Updated: 2024/03/13 20:24:54 by mel-ward         ###   ########.fr       */
+/*   Updated: 2024/03/17 21:40:21 by mel-ward         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int	check_it(char *str)
 {
 	while (*str)
 	{
-		if (!ft_strchr("+-\t ", *str) && !ft_isdigit(*str))
+		if (!ft_strchr("+- ", *str) && !ft_isdigit(*str))
 			return (0);
 		if (ft_strchr("+-", *str) && !ft_isdigit(*(str + 1)))
 			return (0);
